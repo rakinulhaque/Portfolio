@@ -1,0 +1,82 @@
+---
+import { siteConfig } from "../config";
+const hasHonorsAndAwards = siteConfig.honorsAndAwards && siteConfig.honorsAndAwards.length > 0;
+---
+
+{
+  hasHonorsAndAwards && (
+    <section id="honors" class="p-8 sm:p-12 md:p-16 lg:p-24">
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div class="lg:col-span-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+              Honors & Awards
+            </h2>
+            <div
+              class="w-[75px] h-[5px] mt-2 rounded-full"
+              style={`background-color: ${siteConfig.accentColor}`}
+            />
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="space-y-6">
+              {siteConfig.honorsAndAwards.map((award, index) => (
+                <div class="group relative">
+                  <div class="block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-4">
+                      <div class="flex-1">
+                        <div class="flex items-start gap-4">
+                          <span
+                            class="text-sm font-mono"
+                            style={{ color: siteConfig.accentColor }}
+                          >
+                            0{index + 1}
+                          </span>
+                          <div class="flex-1">
+                            <h3 class="text-xl sm:text-2xl font-bold text-gray-900">
+                              {award.title}
+                            </h3>
+                            <p class="text-base text-gray-700 font-medium mt-2">
+                              {award.organization}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ml-8">
+                      <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+                        {award.description}
+                      </p>
+                    </div>
+
+                    {/* Award icon */}
+                    <div class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 flex items-center justify-center rounded-full transition-all duration-300"
+                         style={{
+                           backgroundColor: `${siteConfig.accentColor}15`,
+                         }}>
+                      <svg
+                        class="w-5 h-5 sm:w-6 sm:h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        style={{ color: siteConfig.accentColor }}
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
