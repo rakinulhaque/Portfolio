@@ -2,8 +2,10 @@
 import { siteConfig } from "../config";
 
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasResearchExperience = siteConfig.researchExperience && siteConfig.researchExperience.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasHonorsAndAwards = siteConfig.honorsAndAwards && siteConfig.honorsAndAwards.length > 0;
 ---
 
 <header
@@ -33,6 +35,18 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         )
       }
       {
+        hasResearchExperience && (
+          <li>
+            <a
+              href="#research"
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Research
+            </a>
+          </li>
+        )
+      }
+      {
         hasExperience && (
           <li>
             <a
@@ -52,6 +66,18 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Education
+            </a>
+          </li>
+        )
+      }
+      {
+        hasHonorsAndAwards && (
+          <li>
+            <a
+              href="#honors"
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Honors & Awards
             </a>
           </li>
         )
