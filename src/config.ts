@@ -15,19 +15,22 @@ export const siteConfig = {
   skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Explainable Detection of Online Sexism",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Research-driven NLP project addressing online sexism with explainable AI. Detects sexist content while providing contextual explanations to improve transparency, trust, and interpretability in automated moderation systems.",
+      link: "https://github.com/rakinulhaque/Explainable-Detection-of-Online-sexism",
+      skills: ["Python", "NLP", "Transformers", "Explainable AI", "scikit-learn", "Jupyter Notebook"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "Loan Eligibility & Traffic Prediction",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Two end-to-end machine learning projects showcasing classification for loan approval and regression/time-series forecasting for traffic volume—covering data cleaning, feature engineering, model development, evaluation, and explainability.",
+      link: "https://github.com/rakinulhaque/Loan-Eligibility-and-Traffic-Prediction",
+      skills: [
+        "Python", "scikit-learn","Pandas","NumPy","XGBoost","Classification"
+      ],
     },
+
     {
       name: "ExtensionKit",
       description:
@@ -37,41 +40,40 @@ export const siteConfig = {
     },
   ],
   researchExperience: [
-    {
-      title: "Machine Learning Research Project",
-      institution: "University Research Lab",
-      dateRange: "Jan 2023 - Present",
-      description: "Investigating novel approaches to deep learning optimization for computer vision applications",
-      bullets: [
-        "Developed new optimization algorithms that improved model convergence by 25%",
-        "Published findings in top-tier conference proceedings",
-        "Collaborated with industry partners on real-world implementation",
-        "Mentored 3 undergraduate research assistants",
+        {
+      "title": "Thesis: Exploration and Mitigation of Gender Bias in Word Embeddings from Transformer-based Language Models",
+      "institution": "BRAC University — Department of Computer Science and Engineering",
+      "dateRange": "Jan 2023 – Present",
+      "description": "Designed an evaluation metric (MALoR) and a continued-pretraining pipeline to measure and mitigate gender bias in BERT and related transformer models.",
+      "bullets": [
+        "Defined MALoR, a model-agnostic bias score that averages log-ratios of male vs female token probabilities across 51 templates and 60 occupations; 0 indicates no bias.",
+        "Designed two masked-LM probes—(a) mask pronoun with occupation fixed and (b) mask occupation with pronoun fixed—to reveal contextual gender stereotypes in BERT.",
+        "Curated 51 neutral sentence templates that avoid linguistic confounds (e.g., 'a/an') and span six sectors with 60 occupations for robust, context-diverse evaluation.",
+        "Built a gender-balanced corpus via Counterfactual Data Augmentation on WMT’15/’18, yielding 6,182 he↔she, 6,064 his↔her, and 6,000 name-swap sentences for training.",
+        "Implemented an end-to-end continued-pretraining pipeline (tokenization, power-of-two padding, attention masks) and trained BERT-base for 100 epochs with AdamW (2e-5) and linear warm-up.",
+        "Reduced measured bias on BERT-base by ~95.6% (MALoR 1.27 -> 0.056), with a learning curve confirming convergence and stability.",
+        "Validated parity after debiasing: male and female probabilities become near-equal across diverse occupations under both probing setups.",
+        "Demonstrated MALoR’s generality for MLM transformers and diagnosed vocabulary coverage gaps that hinder RoBERTa/ALBERT on name/occupation probes.",
+        "Delivered a reproducible fairness-improvement recipe: MALoR auditing combined with CDA-driven continued pretraining, guided by an interpretable bias score.",
+        "Outlined practical next steps: expand pronoun/name coverage and develop a lightweight debiasing layer to filter outputs from pretrained transformers."
       ],
-      skills: ["Python", "TensorFlow", "PyTorch", "Computer Vision"],
-      links: {
-        paper: "https://arxiv.org/abs/example-paper-1",
-        thesis: "https://university.edu/thesis/example-thesis-1",
-        codebase: "https://github.com/username/ml-optimization-project",
-      },
-    },
-    {
-      title: "Natural Language Processing Study",
-      institution: "AI Research Institute",
-      dateRange: "Jun 2022 - Dec 2022",
-      description: "Explored transformer architectures for multilingual text understanding and generation",
-      bullets: [
-        "Implemented custom transformer models for low-resource languages",
-        "Achieved state-of-the-art results on benchmark datasets",
-        "Presented research at international AI conference",
-        "Open-sourced research code with 500+ GitHub stars",
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Hugging Face Transformers",
+        "BERT (Masked Language Modeling)",
+        "NLP Fairness & Bias Mitigation",
+        "Counterfactual Data Augmentation (CDA)",
+        "Data Curation (WMT’15/’18)",
+        "Experiment Design & Evaluation",
+        "Pandas",
+        "NumPy"
       ],
-      skills: ["Python", "Transformers", "BERT", "NLP"],
-      links: {
-        paper: "https://arxiv.org/abs/example-paper-2",
-        thesis: "https://university.edu/thesis/example-thesis-2",
-        codebase: "https://github.com/username/nlp-multilingual-project",
-      },
+      "links": {
+        "paper": "null",
+        "thesis": "null",
+        "codebase": "REPLACE_WITH_GITHUB_URL"
+      }
     },
   ],
   experience: [
