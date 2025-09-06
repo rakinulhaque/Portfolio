@@ -4,7 +4,7 @@ const base = import.meta.env.BASE_URL || "/";
 const photoSrc = siteConfig.photoUrl
   ? (siteConfig.photoUrl.startsWith("http")
       ? siteConfig.photoUrl
-      : `${base}${siteConfig.photoUrl}`)
+      : `${base}${siteConfig.photoUrl.replace(/^\/+/, "")}`)
   : undefined;
 ---
 
