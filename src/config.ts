@@ -1,5 +1,5 @@
 export const siteConfig = {
-  photoUrl: '/Portfolio/images/IMG_1152.jpeg', // path relative to /public (or a full https URL)
+  photoUrl: '/images/IMG_1152.jpeg', // path relative to /public (or a full https URL)
   photoAlt: 'Rakinul Haque',
   name: "Rakinul Haque",
   title: "Software Engineer",
