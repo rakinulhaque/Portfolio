@@ -43,20 +43,19 @@ export const siteConfig = {
         {
       "title": "Thesis: Exploration and Mitigation of Gender Bias in Word Embeddings from Transformer-based Language Models",
       "institution": "BRAC University — Department of Computer Science and Engineering",
-      "dateRange": "Jan 2023 – Present",
-      "description": "Designed an evaluation metric (MALoR) and a continued-pretraining pipeline to measure and mitigate gender bias in BERT and related transformer models.",
+      "dateRange": "September 2022 – September 2023",
       "bullets": [
-        "Defined MALoR, a model-agnostic bias score that averages log-ratios of male vs female token probabilities across 51 templates and 60 occupations; 0 indicates no bias.",
-        "Designed two masked-LM probes—(a) mask pronoun with occupation fixed and (b) mask occupation with pronoun fixed—to reveal contextual gender stereotypes in BERT.",
-        "Curated 51 neutral sentence templates that avoid linguistic confounds (e.g., 'a/an') and span six sectors with 60 occupations for robust, context-diverse evaluation.",
-        "Built a gender-balanced corpus via Counterfactual Data Augmentation on WMT’15/’18, yielding 6,182 he↔she, 6,064 his↔her, and 6,000 name-swap sentences for training.",
-        "Implemented an end-to-end continued-pretraining pipeline (tokenization, power-of-two padding, attention masks) and trained BERT-base for 100 epochs with AdamW (2e-5) and linear warm-up.",
-        "Reduced measured bias on BERT-base by ~95.6% (MALoR 1.27 -> 0.056), with a learning curve confirming convergence and stability.",
-        "Validated parity after debiasing: male and female probabilities become near-equal across diverse occupations under both probing setups.",
-        "Demonstrated MALoR’s generality for MLM transformers and diagnosed vocabulary coverage gaps that hinder RoBERTa/ALBERT on name/occupation probes.",
-        "Delivered a reproducible fairness-improvement recipe: MALoR auditing combined with CDA-driven continued pretraining, guided by an interpretable bias score.",
-        "Outlined practical next steps: expand pronoun/name coverage and develop a lightweight debiasing layer to filter outputs from pretrained transformers."
+       "Novel Evaluation Metric Development: Created MALoR (Mean Absolute Log Odds Ratio), an original metric for quantifying gender bias in transformer models providing a standardized approach to bias measurement.", "Methodical Template Design: Constructed 51 carefully crafted sentence templates across six occupational sectors as the foundation for bias detection, systematically avoiding linguistic artifacts that could skew model predictions and ensuring reliable probability measurements across diverse contexts.",
+        "Multi-dimensional Gender Analysis: Conducted systematic experiments across three gender representation categories (he-she, his-her, male-female names) to capture the full spectrum of gender bias manifestations, ensuring comprehensive evaluation beyond simple pronoun-based assessments.",
+        "Rigorous Experimental Methodology: Employed probability-based bias detection through BERT's masked language modeling capabilities, analyzing softmax distributions to quantify gender stereotypes in occupational contexts.",
+        "Cross-model Applicability Assessment: Evaluated methodology across multiple transformer architectures (BERT, RoBERTa, ALBERT), identifying model-specific limitations and establishing the broader applicability of the proposed approach.",
+        "Dataset Engineering and Curation: Created gender-balanced training datasets from WMT 18/15 corpora through systematic application of Counterfactual Data Augmentation, resulting in over 18,000 augmented sentence pairs for model training.",
+        "Practical Implementation of Theoretical Concepts: Successfully bridged the gap between bias detection theory and practical mitigation by implementing continued pretraining with custom loss functions and optimization strategies.",
+        "Reproducible Training Pipeline Development: Built a robust continued-pretraining infrastructure with optimized sequence handling and attention mechanisms, incorporating convergence monitoring through learning curves for reliable model evaluation.",
+        "Effective Debiasing Through Continued Pretraining: Successfully reduced gender bias in BERT from a MALoR score of 1.27 to 0.056 using Counterfactual Data Augmentation on gender-balanced datasets.",
+        "Strategic Research Roadmap: Outlined future work to broaden pronoun and name coverage while developing a lightweight, model-agnostic debiasing layer that can be applied across different transformer models without requiring retraining."
       ],
+
       "skills": [
         "Python",
         "PyTorch",
@@ -70,65 +69,76 @@ export const siteConfig = {
         "NumPy"
       ],
       "links": {
-        "paper": "null",
-        "thesis": "null",
-        "codebase": "REPLACE_WITH_GITHUB_URL"
+        "paper": "https://drive.google.com/file/d/14Yl3wbuLf2I5sfCuQtoWBsoO0jRMQmT6/view?usp=sharing",
+        "thesis": "https://drive.google.com/file/d/1RHM65KQJFR5QM-sJBDLeT37hJ37nIzJV/view",
+        "codebase": "https://github.com/rakinulhaque/Exploration-and-Mitigation-of-Gender-Bias-in-Word-Embeddings-from-Transformer-based-Language-Models"
       }
     },
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Welldev Limited",
+      title: "Software Engineer L2",
+      dateRange: "July 2025 - Present",
       bullets: [
         "Led development of microservices architecture serving 1M+ users",
         "Reduced API response times by 40% through optimization",
         "Mentored team of 5 junior developers",
       ],
-      companyLink: "https://techcompany.com",
+      companyLink: "https://www.welldev.io/",
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "Welldev Limited",
+      title: "Junior Software Engineer",
+      dateRange: "March 2024 - June 2024",
       bullets: [
         "Built and launched MVP product from scratch using React and Node.js",
         "Implemented CI/CD pipeline reducing deployment time by 60%",
         "Collaborated with product team to define technical requirements",
       ],
-      companyLink: "https://startup-inc.com",
+      companyLink: "https://www.welldev.io/",
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "Bkash Limited",
+      title: "Backend Developer Intern",
+      dateRange: "September 2023 - January 2024",
       bullets: [
         "Developed responsive web applications for 20+ clients",
         "Improved site performance scores by 35% on average",
         "Introduced modern JavaScript frameworks to legacy codebases",
       ],
-      companyLink: "https://digitalagency.com",
+      companyLink: "https://www.bkash.com/",
+    },
+    {
+      company: "Brac University",
+      title: "Undergraduate Teaching Assistant/ Student Tutor",
+      dateRange: "June 2022 - September 2023",
+      bullets: [
+        "Developed responsive web applications for 20+ clients",
+        "Improved site performance scores by 35% on average",
+        "Introduced modern JavaScript frameworks to legacy codebases",
+      ],
+      companyLink: "https://www.bracu.ac.bd/",
     },
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      gpa: "3.8/4.0",
+      school: "BRAC University",
+      degree: "Bachelor of Science in Computer Science and Engineering",
+      dateRange: "2020 - 2023",
+      cgpa: "3.97/4.0",
       achievements: [
         "Graduated Magna Cum Laude with 3.8 GPA",
         "Dean's List all semesters",
         "President of Computer Science Club",
       ],
-      schoolLink: "https://university.edu",
+      schoolLink: "https://www.bracu.ac.bd/",
     },
     {
       school: "Online Platform",
       degree: "Full Stack Development Certificate",
       dateRange: "2019",
-      cgpa: "4.0/4.0",
+      gpa: "5.0/5.0",
       achievements: [
         "Completed 500+ hours of coursework",
         "Built 10+ portfolio projects",
