@@ -30,14 +30,6 @@ export const siteConfig = {
         "Python", "scikit-learn","Pandas","NumPy","XGBoost","Classification"
       ],
     },
-
-    {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
   ],
   researchExperience: [
         {
@@ -81,9 +73,10 @@ export const siteConfig = {
       title: "Software Engineer L2",
       dateRange: "July 2025 - Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Led ISO 27001 certification implementing K8s security policies, Trivy scans, and RBAC",
+        "Deployed OWASP ModSecurity WAF with custom rules, blocking 95% of attacks",
+        "Authored K8s security best practices across environments, enhancing defense posture",
+        "Built Jenkins pipeline with integrated security scanning, reducing vulnerabilities by 70%"
       ],
       companyLink: "https://www.welldev.io/",
     },
@@ -91,10 +84,11 @@ export const siteConfig = {
       company: "Welldev Limited",
       title: "Junior Software Engineer",
       dateRange: "March 2024 - June 2024",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+     bullets: [
+        "Strengthened security across 6 K8s clusters with automated vulnerability scanning",
+        "Enhanced CI/CD security via GitHub Actions with comprehensive scanning workflows",
+        "Built secure infrastructure using Terraform with hardened VPN/firewall configs",
+        "Secured data transmission with compression protocols maintaining system integrity"
       ],
       companyLink: "https://www.welldev.io/",
     },
@@ -103,9 +97,8 @@ export const siteConfig = {
       title: "Backend Developer Intern",
       dateRange: "September 2023 - January 2024",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Contributed to live financial technology applications serving millions of users",
+        "Gained hands-on experience with enterprise-level software development practices"
       ],
       companyLink: "https://www.bkash.com/",
     },
@@ -114,9 +107,10 @@ export const siteConfig = {
       title: "Undergraduate Teaching Assistant/ Student Tutor",
       dateRange: "June 2022 - September 2023",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Assisted professors in delivering computer science and engineering coursework",
+        "Provided one-on-one tutoring sessions helping students improve academic performance",
+        "Graded assignments and exams while providing constructive feedback to students",
+        "Supported lab sessions and practical exercises in programming and technical subjects"
       ],
       companyLink: "https://www.bracu.ac.bd/",
     },
@@ -130,24 +124,38 @@ export const siteConfig = {
       achievements: [
         "Graduated Magna Cum Laude with 3.8 GPA",
         "Dean's List all semesters",
-        "President of Computer Science Club",
+        "Active member of ROBU (Robotics Club of BRAC University)",
       ],
       schoolLink: "https://www.bracu.ac.bd/",
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
+      school: "Chittagong Cantonment Public School & College",
+      degree: "Higher Secondary Certificate (HSC)",
+      dateRange: "2017 - 2018",
       gpa: "5.0/5.0",
       achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "Led student council initiatives and academic committees", 
+        "Participated in inter-college science fair and technology exhibitions",
       ],
-      schoolLink: "https://onlineplatform.com",
+      schoolLink: "https://ccpc.edu.bd/",
+    },
+    {
+      school: "Chittagong Cantonment Public School & College",
+      degree: "Secondary School Certificate (SSC)",
+      dateRange: "2015 - 2016",
+      gpa: "5.0/5.0",
+      achievements: [
+        "Achieved perfect GPA of 5.0 in Science group",
+        "Participated in inter-school debate and quiz competitions",
+      ],
+      schoolLink: "https://ccpc.edu.bd/",
     },
   ],
   honorsAndAwards: [
+
+    // onekbar deans and vc list
+    // selected for welldev among 4000 candidates
+    // Earned double promotion in  review cycles of the company
     {
       title: "Dean's List",
       organization: "University Name",
