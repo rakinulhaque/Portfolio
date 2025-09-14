@@ -23,38 +23,14 @@ export const siteConfig = {
       "NLTK", 
       "Transformers"
     ],
-  projects: [
-    {
-      name: "AI-Powered Inclusive Job Screening Tool",
-      description:
-        "An AI-driven end to end Machine Learning Project developed during a workplace hackathon to promote inclusivity in hiring. The tool analyzes job descriptions using NLP to detect biased language and suggests improvements, ensuring fairer hiring practices. It also streamlines candidate evaluation with explainable AI techniques.",
-      link: "https://github.com/rakinulhaque/Ctrl-Alt-Hire",
-      skills: ["Python", "NLP", "Transformers", "Flask", "Explainable AI", "scikit-learn"],
-    },
-    {
-      name: "Explainable Detection of Online Sexism",
-      description:
-        "Research-driven NLP project addressing online sexism with explainable AI. Detects sexist content while providing contextual explanations to improve transparency, trust, and interpretability in automated moderation systems.",
-      link: "https://github.com/rakinulhaque/Explainable-Detection-of-Online-sexism",
-      skills: ["Python", "NLP", "Transformers", "Explainable AI", "scikit-learn", "Jupyter Notebook"],
-    },
-    {
-      name: "Loan Eligibility & Traffic Prediction",
-      description:
-        "Two end-to-end machine learning projects showcasing classification for loan approval and regression/time-series forecasting for traffic volume—covering data cleaning, feature engineering, model development, evaluation, and explainability.",
-      link: "https://github.com/rakinulhaque/Loan-Eligibility-and-Traffic-Prediction",
-      skills: [
-        "Python", "scikit-learn","Pandas","NumPy","XGBoost","Classification"
-      ],
-    },
-  ],
-  researchExperience: [
+  
+    researchExperience: [
         {
       "title": "Thesis: Exploration and Mitigation of Gender Bias in Word Embeddings from Transformer-based Language Models",
       "institution": "BRAC University — Department of Computer Science and Engineering",
       "dateRange": "September 2022 – September 2023",
       "bullets": [
-       "Novel Evaluation Metric Development: Created MALoR (Mean Absolute Log Odds Ratio), an original metric for quantifying gender bias in transformer models providing a standardized approach to bias measurement.", "Methodical Template Design: Constructed 51 carefully crafted sentence templates across six occupational sectors as the foundation for bias detection, systematically avoiding linguistic artifacts that could skew model predictions and ensuring reliable probability measurements across diverse contexts.",
+      "Novel Evaluation Metric Development: Created MALoR (Mean Absolute Log Odds Ratio), an original metric for quantifying gender bias in transformer models providing a standardized approach to bias measurement.", "Methodical Template Design: Constructed 51 carefully crafted sentence templates across six occupational sectors as the foundation for bias detection, systematically avoiding linguistic artifacts that could skew model predictions and ensuring reliable probability measurements across diverse contexts.",
         "Multi-dimensional Gender Analysis: Conducted systematic experiments across three gender representation categories (he-she, his-her, male-female names) to capture the full spectrum of gender bias manifestations, ensuring comprehensive evaluation beyond simple pronoun-based assessments.",
         "Rigorous Experimental Methodology: Employed probability-based bias detection through BERT's masked language modeling capabilities, analyzing softmax distributions to quantify gender stereotypes in occupational contexts.",
         "Cross-model Applicability Assessment: Evaluated methodology across multiple transformer architectures (BERT, RoBERTa, ALBERT), identifying model-specific limitations and establishing the broader applicability of the proposed approach.",
@@ -82,6 +58,43 @@ export const siteConfig = {
         "thesis": "https://drive.google.com/file/d/1RHM65KQJFR5QM-sJBDLeT37hJ37nIzJV/view",
         "codebase": "https://github.com/rakinulhaque/Exploration-and-Mitigation-of-Gender-Bias-in-Word-Embeddings-from-Transformer-based-Language-Models"
       }
+    },
+  ],
+  education: [
+    {
+      school: "BRAC University",
+      degree: "Bachelor of Science in Computer Science and Engineering",
+      dateRange: "2020 - 2023",
+      cgpa: "3.97/4.0",
+      achievements: [
+       " Graduated with Highest Distinction",
+        "Recipient of Vice Chancellor's List recognition for 10 out of 11 semesters (awarded for CGPA of 3.90 and above) and Dean's List recognition for all semesters",
+        "Earned A+ grades (97+ out of 100) in 12 courses throughout the program",
+        "Active member of ROBU (Robotics Club of BRAC University), contributing to robotics projects and community initiatives"
+      ],
+      schoolLink: "https://www.bracu.ac.bd/",
+    },
+    {
+      school: "Chittagong Cantonment Public School & College",
+      degree: "Higher Secondary Certificate (HSC)",
+      dateRange: "2017 - 2018",
+      gpa: "5.0/5.0",
+      achievements: [
+        "Led student council initiatives and academic committees", 
+        "Participated in inter-college science fair and technology exhibitions",
+      ],
+      schoolLink: "https://ccpc.edu.bd/",
+    },
+    {
+      school: "Chittagong Cantonment Public School & College",
+      degree: "Secondary School Certificate (SSC)",
+      dateRange: "2015 - 2016",
+      gpa: "5.0/5.0",
+      achievements: [
+        "Achieved perfect GPA of 5.0 in Science group",
+        "Participated in inter-school debate and quiz competitions",
+      ],
+      schoolLink: "https://ccpc.edu.bd/",
     },
   ],
   experience: [
@@ -132,43 +145,32 @@ export const siteConfig = {
       companyLink: "https://www.bracu.ac.bd/",
     },
   ],
-  education: [
+  projects: [
     {
-      school: "BRAC University",
-      degree: "Bachelor of Science in Computer Science and Engineering",
-      dateRange: "2020 - 2023",
-      cgpa: "3.97/4.0",
-      achievements: [
-       " Graduated with Highest Distinction",
-        "Recipient of Vice Chancellor's List recognition for 10 out of 11 semesters (awarded for CGPA of 3.90 and above) and Dean's List recognition for all semesters",
-        "Earned A+ grades (97+ out of 100) in 12 courses throughout the program",
-        "Active member of ROBU (Robotics Club of BRAC University), contributing to robotics projects and community initiatives"
-      ],
-      schoolLink: "https://www.bracu.ac.bd/",
+      name: "AI-Powered Inclusive Job Screening Tool",
+      description:
+        "An AI-driven end to end Machine Learning Project developed during a workplace hackathon to promote inclusivity in hiring. The tool analyzes job descriptions using NLP to detect biased language and suggests improvements, ensuring fairer hiring practices. It also streamlines candidate evaluation with explainable AI techniques.",
+      link: "https://github.com/rakinulhaque/Ctrl-Alt-Hire",
+      skills: ["Python", "NLP", "Transformers", "Flask", "Explainable AI", "scikit-learn"],
     },
     {
-      school: "Chittagong Cantonment Public School & College",
-      degree: "Higher Secondary Certificate (HSC)",
-      dateRange: "2017 - 2018",
-      gpa: "5.0/5.0",
-      achievements: [
-        "Led student council initiatives and academic committees", 
-        "Participated in inter-college science fair and technology exhibitions",
-      ],
-      schoolLink: "https://ccpc.edu.bd/",
+      name: "Explainable Detection of Online Sexism",
+      description:
+        "Research-driven NLP project addressing online sexism with explainable AI. Detects sexist content while providing contextual explanations to improve transparency, trust, and interpretability in automated moderation systems.",
+      link: "https://github.com/rakinulhaque/Explainable-Detection-of-Online-sexism",
+      skills: ["Python", "NLP", "Transformers", "Explainable AI", "scikit-learn", "Jupyter Notebook"],
     },
     {
-      school: "Chittagong Cantonment Public School & College",
-      degree: "Secondary School Certificate (SSC)",
-      dateRange: "2015 - 2016",
-      gpa: "5.0/5.0",
-      achievements: [
-        "Achieved perfect GPA of 5.0 in Science group",
-        "Participated in inter-school debate and quiz competitions",
+      name: "Loan Eligibility & Traffic Prediction",
+      description:
+        "Two end-to-end machine learning projects showcasing classification for loan approval and regression/time-series forecasting for traffic volume—covering data cleaning, feature engineering, model development, evaluation, and explainability.",
+      link: "https://github.com/rakinulhaque/Loan-Eligibility-and-Traffic-Prediction",
+      skills: [
+        "Python", "scikit-learn","Pandas","NumPy","XGBoost","Classification"
       ],
-      schoolLink: "https://ccpc.edu.bd/",
     },
   ],
+  
   honorsAndAwards: [
     {
       title: "Vice Chancellor's List",
