@@ -11,9 +11,26 @@ export const siteConfig = {
     github: "https://github.com/rakinulhaque",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I am a passionate Software Engineer with a strong academic background and expertise in Natural Language Processing and cybersecurity. My research focuses on AI fairness and bias mitigation, while my professional experience spans enterprise security implementations and infrastructure development. I am particularly interested in developing trustworthy AI systems and exploring diverse NLP applications across various domains including healthcare, education, and social impact initiatives. I am eager to pursue graduate studies to deepen my expertise and contribute to impactful NLP research.",
+  skills: [
+      "Python", 
+      "PyTorch", 
+      "Kubernetes", 
+      "Docker", 
+      "Cloud",
+      "Pandas", 
+      "TensorFlow",
+      "NLTK", 
+      "Transformers"
+    ],
   projects: [
+    {
+      name: "AI-Powered Inclusive Job Screening Tool",
+      description:
+        "An AI-driven end to end Machine Learning Project developed during a workplace hackathon to promote inclusivity in hiring. The tool analyzes job descriptions using NLP to detect biased language and suggests improvements, ensuring fairer hiring practices. It also streamlines candidate evaluation with explainable AI techniques.",
+      link: "https://github.com/rakinulhaque/Ctrl-Alt-Hire",
+      skills: ["Python", "NLP", "Transformers", "Flask", "Explainable AI", "scikit-learn"],
+    },
     {
       name: "Explainable Detection of Online Sexism",
       description:
@@ -122,9 +139,10 @@ export const siteConfig = {
       dateRange: "2020 - 2023",
       cgpa: "3.97/4.0",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "Active member of ROBU (Robotics Club of BRAC University)",
+       " Graduated with Highest Distinction",
+        "Recipient of Vice Chancellor's List recognition for 10 out of 11 semesters (awarded for CGPA of 3.90 and above) and Dean's List recognition for all semesters",
+        "Earned A+ grades (97+ out of 100) in 12 courses throughout the program",
+        "Active member of ROBU (Robotics Club of BRAC University), contributing to robotics projects and community initiatives"
       ],
       schoolLink: "https://www.bracu.ac.bd/",
     },
@@ -152,34 +170,20 @@ export const siteConfig = {
     },
   ],
   honorsAndAwards: [
-
-    // onekbar deans and vc list
-    // selected for welldev among 4000 candidates
-    // Earned double promotion in  review cycles of the company
     {
-      title: "Dean's List",
-      organization: "University Name",
-      description: "Recognized for academic excellence with GPA above 3.5 for consecutive semesters",
+      title: "Vice Chancellor's List",
+      organization: "BRAC University",
+      description: "Recognized for exceptional academic excellence with CGPA above 3.90 for 10 semesters",
     },
     {
-      title: "Presidential Scholarship",
-      organization: "University Name",
-      description: "Full tuition scholarship awarded to top 5% of incoming students based on academic merit",
+      title: "Merit-Based Scholarship",
+      organization: "BRAC University", 
+      description: "Awarded merit-based tuition scholarship ranging from 75% to 100% coverage based on outstanding academic performance",
     },
     {
-      title: "Best Research Paper Award",
-      organization: "International AI Conference",
-      description: "Awarded for outstanding contribution to machine learning optimization research",
-    },
-    {
-      title: "Outstanding Student Leader Award",
-      organization: "Computer Science Department",
-      description: "Recognized for leadership in organizing tech events and mentoring fellow students",
-    },
-    {
-      title: "Hackathon Winner",
-      organization: "Tech Innovation Challenge",
-      description: "First place in 48-hour hackathon with innovative AI-powered healthcare solution",
-    },
+      title: "Performance-Based Promotion",
+      organization: "Welldev Limited",
+      description: "Received two-level promotion in recognition of consistent performance and contributions to key project initiatives",
+    }
   ],
 };
