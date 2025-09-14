@@ -3,3 +3,31 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
+
+/* Override light gray text colors to be darker */
+.text-gray-600 {
+  color: #000000 !important; /* Darker than default gray-600 */
+  font-weight: 420 !important; /* Just a tiny bit bolder than normal */
+}
+
+.text-gray-700 {
+  color: #0f1f46 !important; /* Darker than default gray-700 */
+  font-weight: 420 !important; /* Just a tiny bit bolder than normal */
+}
+
+/* Keep dates light and subtle */
+.text-gray-500 {
+  color: #0151ef !important; /* Keep original gray-500 color */
+  font-weight: 420 !important; /* Keep normal font weight */
+}
+
+/* Keep headings and other elements as they are */
+h1, h2, h3, h4, h5, h6 {
+  color: #0f1f46;
+  font-weight: 800 !important; /* Keep headers bold */
+}
+
+/* Keep skill blocks with their proper contrast */
+.bg-gray-100 {
+  color: #0f1f46;
+}

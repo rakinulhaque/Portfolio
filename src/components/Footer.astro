@@ -131,22 +131,22 @@ const hasHonorsAndAwards = siteConfig.honorsAndAwards && siteConfig.honorsAndAwa
             >About</a
           >
           {
-            hasProjects && (
-              <a
-                href="#projects"
-                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-              >
-                Projects
-              </a>
-            )
-          }
-          {
             hasResearchExperience && (
               <a
                 href="#research"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
                 Research
+              </a>
+            )
+          }
+          {
+            hasEducation && (
+              <a
+                href="#education"
+                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Education
               </a>
             )
           }
@@ -161,12 +161,12 @@ const hasHonorsAndAwards = siteConfig.honorsAndAwards && siteConfig.honorsAndAwa
             )
           }
           {
-            hasEducation && (
+            hasProjects && (
               <a
-                href="#education"
+                href="#projects"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Education
+                Projects
               </a>
             )
           }
