@@ -36,7 +36,7 @@ export const siteConfig = {
       "institution": "BRAC University — Department of Computer Science and Engineering",
       "dateRange": "September 2022 – September 2023",
       "bullets": [
-      "Developed MALOR metric for transformer bias detection - Created novel Mean Absolute Log of Ratio method specifically designed for contextualized word embeddings, addressing limitations of traditional cosine similarity approaches",
+      "Developed MALOR metric for transformer bias detection - Created MALoR (Mean Absolute Log of Ratio) method specifically designed for contextualized word embeddings, addressing limitations of traditional cosine similarity approaches",
       "Methodical Template Design - Constructed 51 sentence templates across six occupational sectors as the foundation for bias detection, systematically avoiding linguistic artifacts that could skew model predictions.",
       "Multi-dimensional Gender Analysis - Conducted systematic experiments across three gender representation categories (he-she, his-her, male-female names) to capture the full spectrum of gender bias manifestations, ensuring comprehensive evaluation beyond simple pronoun-based assessments.",
       "Leveraged masked language modeling for bias quantification - Used BERT's core MLM mechanism to analyze probability distributions and detect gendered prediction patterns across occupational contexts.",
