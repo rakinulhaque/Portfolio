@@ -37,14 +37,14 @@ export const siteConfig = {
       "dateRange": "September 2022 – September 2023",
       "bullets": [
       "Developed MALOR metric for transformer bias detection - Created novel Mean Absolute Log of Ratio method specifically designed for contextualized word embeddings, addressing limitations of traditional cosine similarity approaches",
-      "Methodical Template Design: Constructed 51 sentence templates across six occupational sectors as the foundation for bias detection, systematically avoiding linguistic artifacts that could skew model predictions.",
-      "Multi-dimensional Gender Analysis: Conducted systematic experiments across three gender representation categories (he-she, his-her, male-female names) to capture the full spectrum of gender bias manifestations, ensuring comprehensive evaluation beyond simple pronoun-based assessments.",
+      "Methodical Template Design - Constructed 51 sentence templates across six occupational sectors as the foundation for bias detection, systematically avoiding linguistic artifacts that could skew model predictions.",
+      "Multi-dimensional Gender Analysis - Conducted systematic experiments across three gender representation categories (he-she, his-her, male-female names) to capture the full spectrum of gender bias manifestations, ensuring comprehensive evaluation beyond simple pronoun-based assessments.",
       "Leveraged masked language modeling for bias quantification - Used BERT's core MLM mechanism to analyze probability distributions and detect gendered prediction patterns across occupational contexts.",
-        "Cross-model Applicability Assessment: Evaluated methodology across multiple transformer architectures (BERT, RoBERTa, ALBERT), identifying model-specific limitations and establishing the broader applicability of the proposed approach.",
-        "Dataset Engineering and Curation: Created gender-balanced training datasets from WMT 18/15 corpora through systematic application of Counterfactual Data Augmentation, resulting in over 18,000 augmented sentence pairs for model training.",
-        "Reproducible Training Pipeline Development: Built a robust continued-pretraining infrastructure with optimized sequence handling and attention mechanisms.",
+        "Cross-model Applicability Assessment - Evaluated methodology across multiple transformer architectures (BERT, RoBERTa, ALBERT), identifying model-specific limitations and establishing the broader applicability of the proposed approach.",
+        "Dataset Engineering and Curation - Created gender-balanced training datasets from WMT 18/15 corpora through systematic application of Counterfactual Data Augmentation, resulting in over 18,000 augmented sentence pairs for model training.",
+        "Reproducible Training Pipeline Development - Built a robust continued-pretraining infrastructure with optimized sequence handling and attention mechanisms.",
         "Achieved 95% gender bias reduction in BERT models - Reduced MALOR score from 1.27 to 0.056 while maintaining comparable performance on downstream tasks like SST-2 sentiment analysis",
-        "Strategic Research Roadmap: Outlined future work to broaden pronoun and name coverage while developing a lightweight, model-agnostic debiasing layer that can be applied across different transformer models without requiring retraining."
+        "Strategic Research Roadmap - Outlined future work to broaden pronoun and name coverage while developing a lightweight, model-agnostic debiasing layer that can be applied across different transformer models without requiring retraining."
       ],
 
       "skills": [
