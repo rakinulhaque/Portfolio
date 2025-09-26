@@ -37,9 +37,19 @@ const photoSrc = siteConfig.photoUrl
           />
 
         )}
-  <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-600">
-          {siteConfig.aboutMe}
-        </p>
+        <div class="space-y-4">
+          {Array.isArray(siteConfig.aboutMe) ? (
+            siteConfig.aboutMe.map((paragraph) => (
+              <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-600">
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p class="text-base sm:text-lg md:text-xl leading-relaxed text-gray-600">
+              {siteConfig.aboutMe}
+            </p>
+          )}
+        </div>
 
         {siteConfig.resumeUrl && (
           <div class="pt-6">

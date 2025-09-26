@@ -11,8 +11,13 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/rakinulhaque/",
     github: "https://github.com/rakinulhaque",
   },
-  aboutMe:
-    "I am a passionate Software Engineer with a strong academic background and expertise in Natural Language Processing and cybersecurity. My research focuses on AI fairness and bias mitigation, while my professional experience spans enterprise security implementations and infrastructure development. I am particularly interested in developing trustworthy AI systems and exploring diverse NLP applications across various domains including healthcare, education, and social impact initiatives. I am eager to pursue graduate studies to deepen my expertise and contribute to impactful NLP research.",
+  aboutMe: [
+    "Hi, I'm Rakinul Haque. I'm a Computer Science graduate from BRAC University with a passion for Natural Language Processing and AI Safety. Currently working as a Software Engineer at Welldev Limited, I specialize in building secure, scalable systems while pursuing research in bias detection and mitigation for transformer-based LLM models.",
+
+    "My research focuses on developing novel metrics like MALOR to quantify gender bias in contextualized word embeddings, combining technical excellence with ethical AI principles. With a 3.97/4.00 GPA and Vice Chancellor's List recognition for 10 semesters, I bring both academic excellence and practical experience to create AI systems that are powerful, fair, and transparent.",
+
+    "Currently seeking PhD opportunities to advance NLP research and contribute to responsible AI development."
+  ],
   skills: [
       "Python", 
       "PyTorch", 
@@ -86,40 +91,29 @@ export const siteConfig = {
       ],
       schoolLink: "https://ccpc.edu.bd/",
     },
-    {
-      school: "Chittagong Cantonment Public School & College",
-      degree: "Secondary School Certificate (SSC)",
-      dateRange: "2015 - 2016",
-      gpa: "5.0/5.0",
-      achievements: [
-        "Achieved perfect GPA of 5.0 in Science group",
-        "Participated in inter-school debate and quiz competitions",
-      ],
-      schoolLink: "https://ccpc.edu.bd/",
-    },
   ],
   experience: [
     {
       company: "Welldev Limited",
-      title: "Software Engineer L2",
+      title: "Software Engineer",
       dateRange: "July 2025 - Present",
       bullets: [
         "Led ISO 27001 certification implementing K8s security policies, Trivy scans, and RBAC",
-        "Deployed OWASP ModSecurity WAF with custom rules, blocking 95% of attacks",
+        "Deployed OWASP ModSecurity Web Application Firewall (WAF) with custom rules, blocking 95% of attacks",
         "Authored K8s security best practices across environments, enhancing defense posture",
-        "Built Jenkins pipeline with integrated security scanning, reducing vulnerabilities by 70%"
+        "Specialize in backend development focusing on scalable API design and performance optimization"
       ],
       companyLink: "https://www.welldev.io/",
     },
     {
       company: "Welldev Limited",
       title: "Junior Software Engineer",
-      dateRange: "March 2024 - June 2024",
+      dateRange: "March 2024 - June 2025",
      bullets: [
         "Strengthened security across 6 K8s clusters with automated vulnerability scanning",
-        "Enhanced CI/CD security via GitHub Actions with comprehensive scanning workflows",
+        "Developed RESTful APIs and backend logic with Django and PostgreSQL",
         "Built secure infrastructure using Terraform with hardened VPN/firewall configs",
-        "Secured data transmission with compression protocols maintaining system integrity"
+        "Implemented real-time features using Django and WebSockets"
       ],
       companyLink: "https://www.welldev.io/",
     },
@@ -129,7 +123,8 @@ export const siteConfig = {
       dateRange: "September 2023 - January 2024",
       bullets: [
         "Contributed to live financial technology applications serving millions of users",
-        "Gained hands-on experience with enterprise-level software development practices"
+        "Gained hands-on experience with enterprise-level software development practices",
+        "Developed backend features with Express.js and frontend components using React.js"
       ],
       companyLink: "https://www.bkash.com/",
     },
