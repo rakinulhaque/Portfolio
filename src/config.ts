@@ -32,18 +32,18 @@ export const siteConfig = {
   
     researchExperience: [
         {
-      "title": "Thesis: Exploration and Mitigation of Gender Bias in Word Embeddings from Transformer-based Language Models",
+      "title": "Exploration and Mitigation of Gender Bias in Word Embeddings from Transformer-based Language Models",
       "institution": "BRAC University — Department of Computer Science and Engineering",
       "dateRange": "September 2022 – September 2023",
       "bullets": [
-      "Novel Evaluation Metric Development: Created MALoR (Mean Absolute Log Odds Ratio), an original metric for quantifying gender bias in transformer models providing a standardized approach to bias measurement.", "Methodical Template Design: Constructed 51 carefully crafted sentence templates across six occupational sectors as the foundation for bias detection, systematically avoiding linguistic artifacts that could skew model predictions and ensuring reliable probability measurements across diverse contexts.",
-        "Multi-dimensional Gender Analysis: Conducted systematic experiments across three gender representation categories (he-she, his-her, male-female names) to capture the full spectrum of gender bias manifestations, ensuring comprehensive evaluation beyond simple pronoun-based assessments.",
-        "Rigorous Experimental Methodology: Employed probability-based bias detection through BERT's masked language modeling capabilities, analyzing softmax distributions to quantify gender stereotypes in occupational contexts.",
+      "Developed MALOR metric for transformer bias detection - Created novel Mean Absolute Log of Ratio method specifically designed for contextualized word embeddings, addressing limitations of traditional cosine similarity approaches",
+      "Methodical Template Design: Constructed 51 sentence templates across six occupational sectors as the foundation for bias detection, systematically avoiding linguistic artifacts that could skew model predictions.",
+      "Multi-dimensional Gender Analysis: Conducted systematic experiments across three gender representation categories (he-she, his-her, male-female names) to capture the full spectrum of gender bias manifestations, ensuring comprehensive evaluation beyond simple pronoun-based assessments.",
+      "Leveraged masked language modeling for bias quantification - Used BERT's core MLM mechanism to analyze probability distributions and detect gendered prediction patterns across occupational contexts.",
         "Cross-model Applicability Assessment: Evaluated methodology across multiple transformer architectures (BERT, RoBERTa, ALBERT), identifying model-specific limitations and establishing the broader applicability of the proposed approach.",
         "Dataset Engineering and Curation: Created gender-balanced training datasets from WMT 18/15 corpora through systematic application of Counterfactual Data Augmentation, resulting in over 18,000 augmented sentence pairs for model training.",
-        "Practical Implementation of Theoretical Concepts: Successfully bridged the gap between bias detection theory and practical mitigation by implementing continued pretraining with custom loss functions and optimization strategies.",
-        "Reproducible Training Pipeline Development: Built a robust continued-pretraining infrastructure with optimized sequence handling and attention mechanisms, incorporating convergence monitoring through learning curves for reliable model evaluation.",
-        "Effective Debiasing Through Continued Pretraining: Successfully reduced gender bias in BERT from a MALoR score of 1.27 to 0.056 using Counterfactual Data Augmentation on gender-balanced datasets.",
+        "Reproducible Training Pipeline Development: Built a robust continued-pretraining infrastructure with optimized sequence handling and attention mechanisms.",
+        "Achieved 95% gender bias reduction in BERT models - Reduced MALOR score from 1.27 to 0.056 while maintaining comparable performance on downstream tasks like SST-2 sentiment analysis",
         "Strategic Research Roadmap: Outlined future work to broaden pronoun and name coverage while developing a lightweight, model-agnostic debiasing layer that can be applied across different transformer models without requiring retraining."
       ],
 
