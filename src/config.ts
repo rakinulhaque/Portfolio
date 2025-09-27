@@ -5,7 +5,7 @@ export const siteConfig = {
   title: "Software Engineer",
   description: "Portfolio website of Rakinul Haque",
   accentColor: "#1d4ed8",
-  resumeUrl: "https://drive.google.com/file/d/1xxB6GCEX8sRoWVWsxJIB3kNfXL-wH2N3/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1Q_4SsnK4-UfsnBEdaYCHcC9IrEZWdR3S/view?usp=sharing",
   social: {
     email: "rakinul.haque@g.bracu.ac.bd",
     linkedin: "https://www.linkedin.com/in/rakinulhaque/",
